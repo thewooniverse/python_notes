@@ -1,5 +1,34 @@
 
 
+# simple pig latin - 5
+# https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/python
+
+# my solution
+def pig_it(text):
+    split_ls = text.split(" ")
+    new_ls = []
+
+    for txt in split_ls:
+
+        if txt.isalpha():
+            new_text = txt[1:] + txt[0] + "ay"
+            new_ls.append(new_text)
+
+        else:
+            new_ls.append(txt)
+
+    return " ".join(e for e in new_ls)
+
+
+# other's solution
+import re
+
+
+def pig_it(text):
+    return re.sub(r'([a-z])([a-z]*)', r'\2\1ay', text, flags=re.I)
+    # I really should learn re
+
+
 # snail sort - 4
 # https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/solutions/python/all/newest
 # I'm actually pretty happy with the way this function works;
