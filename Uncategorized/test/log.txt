@@ -1,0 +1,11 @@
+YO
+/c/Users/joowo/desktop/test
+log.txt
+log2.txt
+my_first_script.sh
+mycode.py
+new.txt
+Reggie_Linear_Regression_Skeleton.ipynb
+Reggie_Linear_Regression_Solution.ipynb
+script.sh
+Untitled.ipynb

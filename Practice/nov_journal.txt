@@ -1,0 +1,20 @@
+Journal;
+
+It's actually pretty fun and exciting, building things;
+Defining out different parts of how things will work, and building it out.
+Really it was sticking with the learning curve, it sucks at times.
+And I almost gave up;
+But treating it as my duty, and really sticking to it allowed me to come out on the other side;
+Now I quite enjoy programming.
+
+Just the whole process of thinking;
+
+Okay, here is what I need to build.
+Here is what it's going to look like, here are the functionalities of all of that.
+Here are how different scripts and docs will interact with each other.
+Here is the database;
+Here is how the user will interact with the system.
+Here is the classes needed to implement this, that;
+Here are the wrapper scripts.
+
+
