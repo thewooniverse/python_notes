@@ -1,5 +1,54 @@
 
 
+# ROT 13 - 5
+# https://www.codewars.com/kata/52223df9e8f98c7aa7000062/train/python
+
+import string
+
+print(string.ascii_lowercase)
+
+
+# my solution
+def rot13(message):
+
+    new_text = ""
+
+    for char in message:
+
+        if char.isalpha():
+
+            new_idx = string.ascii_lowercase.find(char.lower()) + 13
+            if new_idx > 26:
+                new_idx = new_idx % 13
+
+            if char.islower():
+                new_text += string.ascii_lowercase[new_idx]
+
+            elif char.isupper():
+                new_text += stirng.ascii_uppercase[new_idx]
+
+        else:
+            new_text += char
+
+    return new_text
+
+
+# lmaooo
+def rot13(message):
+    return message.encode('rot13')
+
+#sol 2
+def rot13(message):
+    def decode(c):
+        if 'a' <= c <= 'z':
+            base = 'a'
+        elif 'A' <= c <= 'Z':
+            base = 'A'
+        else:
+            return c
+        return chr((ord(c) - ord(base) + 13) % 26 + ord(base))
+    return "".join(decode(c) for c in message)
+
 # simple pig latin - 5
 # https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/python
 
