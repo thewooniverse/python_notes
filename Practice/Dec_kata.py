@@ -1,8 +1,25 @@
 
 
+# Double Cola - 5
+# https://www.codewars.com/kata/551dd1f424b7a4cdae0001f0/solutions/python
+
+# my solution without actually making any list or changing the list;
+# Super proud of this ;))
+def who_is_next(names, r):
+    power_of_two = 0
+    while (len(names) * (2 ** power_of_two)) < r:
+        r -= (len(names) * (2 ** power_of_two))
+        power_of_two += 1
+
+    for name in names:
+        r -= (2 ** power_of_two)
+        if r <= 0:  # found it
+            return name
+
+
+
 # ROT 13 - 5
 # https://www.codewars.com/kata/52223df9e8f98c7aa7000062/train/python
-
 import string
 
 print(string.ascii_lowercase)
@@ -33,11 +50,13 @@ def rot13(message):
     return new_text
 
 
-# lmaooo
+# lmaooo - but doesn't work in python 3
 def rot13(message):
     return message.encode('rot13')
 
-#sol 2
+# sol 2
+
+
 def rot13(message):
     def decode(c):
         if 'a' <= c <= 'z':
@@ -53,6 +72,8 @@ def rot13(message):
 # https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/python
 
 # my solution
+
+
 def pig_it(text):
     split_ls = text.split(" ")
     new_ls = []
