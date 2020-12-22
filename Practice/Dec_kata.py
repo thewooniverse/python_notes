@@ -1,5 +1,12 @@
 
 
+# https://www.codewars.com/kata/5ef9c85dc41b4e000f9a645f - QR code, ineresting;
+
+
+# Ball Upwards - 6
+# https://www.codewars.com/kata/566be96bb3174e155300001b/train/python
+
+
 # Double Cola - 5
 # https://www.codewars.com/kata/551dd1f424b7a4cdae0001f0/solutions/python
 
