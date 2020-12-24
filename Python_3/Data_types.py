@@ -8,7 +8,7 @@ z_man = None
 if z_man:  # evaluaes to false
     print("z man exists!")
 
-if z_man is None:
+# if z_man is None:
 
     ### Identity and Equality of data ###
     # https://stackoverflow.com/questions/132988/is-there-a-difference-between-and-is
@@ -21,13 +21,14 @@ a = [1, 2, 3]
 b = a[:]
 
 if a is b:
-    print("a is b!")  # does not print
+    print("a is b!")  # does not print, has the same value but does not point to the same object
 if a == b:
     print("a == b!")
+
 
 c = 35
 d = 35
 if c is d:
-    print("c is d!")
+    print("c is d!") # points to same object.
 if c == d:
     print("c == d!")
