@@ -1,11 +1,23 @@
 
-# falsey and truthy stuff review
+
+"""
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------   SECTION 1 PYTHON BASICS   ----------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+"""
+
+
+"""
+//////////////////////   falsey and truthy stuff review   /////////////////////
+"""
+
 
 ls = ['', None, False, 0, []]
-for i in ls:
-    if not i:
-        pass
-        # print(('its not ' + str(i)), end="  ")
+# for i in ls:
+#     if not i:
+#         print(('its not ' + str(i)), end="  ")
 
 
 # mutable, immutable objects
@@ -62,9 +74,62 @@ for y in list(range(len(grid) - 1)):
 
 
 ### practice project for dictionaries ###
+import pprint
+
+stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
+
+
+def display_inventory(inventory):
+    print("Inventory: ")
+    for k, v in inventory.items():
+        print(str(v) + ' ' + k)
+    print("Total number of items: " + str(sum(inventory.values())) + "\n")
+
+
+# display_inventory(stuff)
+
+
+def add_to_inventory(inventory, addedItems):
+    for item in addedItems:
+        inventory.setdefault(item, 0)
+        inventory[item] += 1
+
+
+add_to_inventory(stuff, dragonLoot)
+
+# display_inventory(stuff)
+
+
+print(len("https://www.w3schools.com/python/ref_func_print.asp#:~:text=The%20print()%20function%20prints,before%20written%20to%20the%20screen.)"))
+
+
+### working with strings ###
+# print("say hi to Bob\"s mother!\\")
+# print(r'that\scarrolscat')
+# raw strings simply consider backslashes as part of the string and not as the start of an escape character.
+
+# print('''Dear Alice, \n
+# Eve's cat has been arrested for catnapping, cat burglary, and extortion.
+# Sincerely, \n
+# Bob''')
+
+
+print('Hello'.rjust(100, "#"))
+print('Hello'.ljust(100, "#"))
+print(' Hello '.center(100, "#"))
 
 
 ### practice project for strings ###
+
+
+"""
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+--------------------------------------   SECTION 2 - Automate the boring stuff   ---------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+"""
 
 
 ### practice questions for regex ###
