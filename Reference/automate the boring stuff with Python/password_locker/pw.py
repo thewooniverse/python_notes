@@ -21,3 +21,9 @@ if account in PASSWORDS:  # same function as PASSWORDS.keys
 
 else:
     print('There is no account named ' + account)
+
+
+# print(sys.argv[0]) #prins pw.py which is the file name
+
+# pyperclip is SO cool lol.
+# This is probably a better implementation
