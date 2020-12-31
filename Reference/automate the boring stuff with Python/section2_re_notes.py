@@ -9,6 +9,8 @@ import string
 
 """
 ###################################################   fundamentals   ###################################################
+
+help(mo)
 """
 
 # use raw text instead of having to escape backslashes. r''
@@ -245,7 +247,7 @@ cons_regex = re.compile(r'[^aeiouAEIOU]')
 mo = vowel_regex.findall('ROboCop eas baby food. BABY FOOD!!!')
 mo1 = cons_regex.findall('ROboCop eas baby food. BABY FOOD!!!')
 # print(mo) # returns ['O', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
-print(mo1)
+# print(mo1)
 # returns ['R', 'b', 'C', 'p', ' ', 's', ' ', 'b', 'b', 'y', ' ', 'f', 'd', '.', ' ', 'B', 'B', 'Y', ' ', 'F', 'D', '!', '!', '!']
 
 vowels = 'aeiouAEIOU'
@@ -259,10 +261,172 @@ mo2 = my_cons_regex.findall('ROboCop eas baby food. BABY FOOD!!!')
 
 """
 #########################################   caret and dollar sign characters   #########################################
+
+You can also use the ^ caret symbol at the stat of a regex to indicate that a match must occur at the BEGINNING of the text.
+Likewise you can also use a $ dollar sign at the end of the regex to indicae he string must end with this regex pattern.
+And you can even use them together to indicate that the entire string must match the regex -- its not enough
+for a match to be made on some subset of the string.
+
+Carets cost dollars
+"""
+begins_with_hello = re.compile(r'^Hello')
+mo = begins_with_hello.search('Hello World!!')
+mo1 = begins_with_hello.search('You had me at Hello...')
+# print(mo.group()) # prints Hello
+# print(mo1 == None) # prints True
+
+ends_with_number = re.compile(r'\d$')
+mo = ends_with_number.search('Your number is 42')
+# print(mo.group(), mo.span())  # prints ('2', span=(16, 17))
+mo1 = ends_with_number.search('Your number is 42, which is forty two')
+# print(mo1 == None) # prints True
+ends_with_numbers = re.compile(r'\d+$')
+mo2 = ends_with_numbers.search('your number is 423')
+# print(mo2.group()) # prints 423
+
+whole_string_is_num = re.compile(r'^\d+$')
+mo3 = whole_string_is_num.search('12345867919239')
+mo4 = whole_string_is_num.search('123458YAAYA1293485')
+mo5 = whole_string_is_num.search('1235891283 1283718274')
+# print(mo3, mo3.group()) # prints (<_sre.SRE_Match object at 0x1004b8920>, '12345867919239')
+# print(mo4 == None) # True
+# print(mo5 == None) # True
+
+
+"""
+
+########################################################################################################################
+###############################################   wildcard character .   ###############################################
+########################################################################################################################
+
+
+The . (or dot) character in regex is called a wildcard and will match any character except a new line.
+The dot character will match just one character, which is why for the example below flat was matched with only lat.
+"""
+atRegex = re.compile(r'.at')
+mo = atRegex.findall(
+    'The cat in a hat sat on the flat mat and hit a rat with a bat')
+# print(mo) # prints ['cat', 'hat', 'sat', 'lat', 'mat', 'rat', 'bat']
+
+
+"""
+##########################################   match everything with dot star   ##########################################
+
+Sometimes you want to match everything and anything.
+Like matching he strng 'First Name:' followed by any and all text.
+You can use the .* to stand in for that anything.
+
+. means anything and everything
+* means zero or more of the preceding character
+
+The dot star uses greedy model it will always ry to match as much text as possible.
+To match with nongreedy mode, use the ? at the end, (.*?)
+"""
+name_regex = re.compile(r'First Name: (.*) Last Name: (.*)')
+mo = name_regex.search('First Name: Al Last Name: Sweigart')
+# print(mo.group()) # First Name: Al Last Name: Sweigart
+# print(mo.group(1)) # Al
+# print(mo.group(2)) # Sweigart
+
+non_greedy_regex = re.compile(r'<.*?>')
+greedy_regex = re.compile(r'<.*>')
+mo = non_greedy_regex.search('<To serve man> for dinner.>')
+mo1 = greedy_regex.search('<To serve man> for dinner.>')
+# print(mo.group())  # prints <To serve man>
+# print(mo1.group())  # prints <To serve man> for dinner.>
+# both regex in this case translate to "match an opening angle bracket, followed by anything, followd by a closing bracket"
+# but the string <To serve man> for dinner.> has two possible matches for the closing bracket;
+# the nongreedy version matches the shortest possible string --- <To serve man>
+# greedy version matches the longest possible string --- <To serve man> for dinner.>
+
+
+"""
+######################################   matching new lines with dot character   #######################################
+
+The dotstar will match everything except a new line.
+But, by passing re.DOTALL as the second argument to re.compile()
+You can make the dot character match ALL characters, including the new line character.
+"""
+
+no_newline_regex = re.compile(".*")
+mo = no_newline_regex.search(
+    'Serve the public trust.\nProtect the innocent. \nUphold the law.').group()
+print(mo)  # prints "serve the public trust"
+
+newline_regex = re.compile(".*", re.DOTALL)
+mo1 = newline_regex.search(
+    'Serve the public trust.\nProtect the innocent. \nUphold the law.').group()
+# print(mo1) #prints in multiple lines, the full text.
+
+
+"""
+############################################   case insensitive matching   #############################################
+
+Normally, regular expressions match text with the EXACT casing you specify.
+For example, these are matching completely different strings:
+regex1 = re.compile('ROBOCOP')
+regex2 = re.compile('RoBoCoP')
+
+But sometimes you care only about matching the letters without worrying about their cases.
+TO make your regex case insensitive you can pass re.IGNORECASE or re.I as a second argument to re.compile()
+"""
+
+robocop = re.compile(r'robocop', re.I)
+sensitive_cop = re.compile(r'robocop')
+
+mog = robocop.search('RoboCop is part man, part machin, all cop.').group()
+mogg = robocop.search('ROBOCOP protects the innocent.').group()
+mog1 = sensitive_cop.search(
+    'RoboCop is part man, part machin, all cop.')
+# print(mog) #RoboCop
+# print(mogg) #ROBOCOP
+# print(mog1 == None) #None
+
+
+"""
+####################################   substituting strings with the sub() method   ####################################
+
+Regular expressions can not only find text patterns but can also subsitute new text in place of those patterns.
+The sub() method for Regex object is passed two arguments.
+1. The fist argument is a string to replace any matches.
+2. The second is the string for the regular expression.
+The sub() method returns a string with teh substitutions applied.
 """
 
 
 """
+########################################################################################################################
+#############################################   Review of Regex Symbols   ##############################################
+########################################################################################################################
+
+
+- The ? matches zero or one of the preceding group.
+- The * matches zero or more of the preceding group.
+- The + matches one or more of the preceding group.
+- The {n} matches exactly n of the preceding group.
+- The {n,} matches n or more of the preceding group.
+- The {,m} matches 0 to m of the preceding group.
+- The {n,m} matches at least n and at most m of the preceding group.
+- {n,m}? or *? or +? performs a nongreedy match of the preceding group.
+- ^spam means the string must begin with spam.
+- spam$ means the string must end with spam.
+- The . matches any character, except newline characters.
+- \d, \w, and \s match a digit, word, or space character, respectively.
+- \D, \W, and \S match anything except a digit, word, or space character, respectively.
+- [abc] matches any character between the brackets (such as a, b, or c).
+- [^abc] matches any character that isnt between the brackets
+
+"""
+
+"""
+########################################################################################################################
+##############################################   managing complex regex   ##############################################
+########################################################################################################################
+"""
+
+
+"""
+
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
@@ -270,6 +434,7 @@ mo2 = my_cons_regex.findall('ROboCop eas baby food. BABY FOOD!!!')
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------
+
 """
 
 """
@@ -283,7 +448,7 @@ Also I really enjoy using the heading gen and dividing up / note taking in this 
 """
 
 
-# regex with .format
+# regex with .format()
 vowels = 'aeiouAEIOU'
 my_consonant = 'b'
 
