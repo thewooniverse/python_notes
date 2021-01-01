@@ -1,2 +1,0 @@
-A lot of these beginner-esque tutorial books cover basic topics (like Loops, Dict etc...) to a good depth;
-Which I can always use as reference when I am lost / forgotten something.
