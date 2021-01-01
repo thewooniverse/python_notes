@@ -10,16 +10,19 @@ import string
 """
 ###################################################   fundamentals   ###################################################
 
-help(mo)
+regex_object = re.compile(r'', second_arg)
+The first argument is the text pattern, second arg is things like re.DOTALL or re.I that gives certain qualities to the regex object.
+
+regex_object.search('search string'), when search is called on a regex object, i returns a Match Object.
+Returns None if no match as found.
 """
 
-# use raw text instead of having to escape backslashes. r''
-# this creates a regex object, or a regex pattern object.
+# use raw text instead of having to escape backslashes. like '\\d\\d\\d'
 phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 # match object is returned
 mo = phone_num_regex.search('My number is 999-754-9997')
 # print('Phone number found: ' + mo.group())  # call .group() on the match object
-# the match object returns None if
+# the match object returns None if no matches were found, no match object is created.
 
 """
 ############################################## grouping with parentheses ###############################################
@@ -351,7 +354,7 @@ You can make the dot character match ALL characters, including the new line char
 no_newline_regex = re.compile(".*")
 mo = no_newline_regex.search(
     'Serve the public trust.\nProtect the innocent. \nUphold the law.').group()
-print(mo)  # prints "serve the public trust"
+# print(mo)  # prints "serve the public trust"
 
 newline_regex = re.compile(".*", re.DOTALL)
 mo1 = newline_regex.search(
@@ -388,17 +391,34 @@ mog1 = sensitive_cop.search(
 
 Regular expressions can not only find text patterns but can also subsitute new text in place of those patterns.
 The sub() method for Regex object is passed two arguments.
-1. The fist argument is a string to replace any matches.
+1. The first argument is a string to replace any matches.
 2. The second is the string for the regular expression.
 The sub() method returns a string with teh substitutions applied.
 """
+
+names_regex = re.compile(r'Agent \w+')
+# print(names_regex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.'))
+# prints CENSORED gave the secret documents to CENSORED.
+
+
+"""
+Sometimes you'll need to use the matched text as part of the substitution itself.
+
+Then within first argument to sub(), you can type \1, \2, \3 and so on
+To mean text from group 1, group 2 and so on in the substitution.
+"""
+
+agent_names_regex = re.compile(r'Agent (\w)\w*')
+result = agent_names_regex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
+# print(result) # result is a string that prints "A**** told C**** that E**** knew B**** was a double agent."
+
+
 
 
 """
 ########################################################################################################################
 #############################################   Review of Regex Symbols   ##############################################
-########################################################################################################################
-
+######################################################################################################################
 
 - The ? matches zero or one of the preceding group.
 - The * matches zero or more of the preceding group.
@@ -415,14 +435,59 @@ The sub() method returns a string with teh substitutions applied.
 - \D, \W, and \S match anything except a digit, word, or space character, respectively.
 - [abc] matches any character between the brackets (such as a, b, or c).
 - [^abc] matches any character that isnt between the brackets
-
 """
+
+
+
+
+
 
 """
 ########################################################################################################################
 ##############################################   managing complex regex   ##############################################
 ########################################################################################################################
+
+Regex can get quite complicated, when the pattern we are looking for becomes more complicated.
+You can often mitigate this by telling the re.compile() function to ignore whitespaces and comments inside the regular expression string.
+This 'verbose mode' can be enabled by passing the variable re.VERBOSE as the second argument to re.compile().
+
 """
+
+# pre organizing
+phoneRegex = re.compile(r'((\d{3}|\(\d{3}\))?(\s|-|\.)?\d{3}(\s|-|\.)\d{4}(\s*(ext|x|ext.)\s*\d{2,5})?)')
+
+# # post organizing with verbose
+phoneRegex2 = re.compile(r"""(
+    (\d{3}|\(\d{3}\))? # area code, optional, either with or without parentheses;
+    (\s|-|\.)? # separator, any space character, - or a ., optional.
+    \d{3} # first 3 digits
+    (\s|-|\.)? # separator, any space character, - or a ., optional.
+    \d{4} # last 4 digits
+    (\s*(ext|x|ext.)\s*\d{2,5})? #extension, firs part is however many s-- which is any space character we have
+    # followed by a ext x ext. string, followed by however many space and a 2-5 digit long number, optional.
+    )""", re.VERBOSE)
+
+
+
+
+"""
+################################   combining re.IGNORECASE, re.DOTALL, and re.VERBOSE   ################################
+
+What if you want to use all of these functions at the same time in a single re.compile() call?
+Well re.compile() only takes a single second argument, so we can get around this limitation by using the | pipe character.
+Which in this context is a bitwise operator (outside of the scope of this book).
+
+So if you want regex that's case insensitive, includes new lines, and verbose it would look like the code below;
+"""
+some_regex_value = re.compile('Foo Bar', (re.IGNORECASE | re.DOTALL | re.VERBOSE))
+
+
+
+
+
+
+
+
 
 
 """
@@ -442,9 +507,9 @@ It's super useful to be able to learn re - as it will be used in grep tools and 
 Also I really enjoy using the heading gen and dividing up / note taking in this way.
 """
 
-
 """
 #################################################   self experiment   ##################################################
+
 """
 
 
