@@ -559,12 +559,12 @@ Also I really enjoy using the heading gen and dividing up / note taking in this 
 
 
 I can do different projects over the next few days;
-- Practice project: Strong Password Detection
-- Practice project: regex version of strip()
-- Practice project: sensitive info (social security, Passport number) censoring engine
-- Self project: URL detector
-- self project: ether address and bitcoin address detector
-- self project: seed phrase detector
+- Practice project: Strong Password Detection - 05 jan
+- Practice project: regex version of strip() - 04 jan
+- Practice project: sensitive info (social security, credit card number) censoring engine; roughly done
+- Self project: URL detector - 06 jan
+- self project: ether address and bitcoin address detector and extractor; roughly done
+- self project: seed phrase detector - 07 jan
 
 I have at least a week's worth of projects I can do :)
 
