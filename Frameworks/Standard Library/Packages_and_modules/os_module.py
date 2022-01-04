@@ -1,7 +1,11 @@
 import os
 from datetime import datetime
 
-os.chdir('/Users/joowo/Desktop/Python/Coding Practice/School and textbook/')
+os.chdir('./working_with_json')
+print(os.getcwd())
+print(os.listdir())
+
+# os.chdir('/Users/joowo/Desktop/Python/Coding Practice/School and textbook/')
 # os.chdir changes directory to defined arg
 # seems there is something up with Windows / and \.
 

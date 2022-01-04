@@ -1,0 +1,19 @@
+
+
+Searching some_secretive.txt for pattern...:
+
+0x97b052C9A4E8705C067cE0c197833bbD496F2612
+
+
+
+Searching some_not_really_secrets.txt for pattern...:
+
+
+
+Searching a_ryan_seacress_type.txt for pattern...:
+
+0xcc1F1565812e224564E075799086411A7E3ABF3d
+
+0x97b052C9A4E8705C067cE0c197833bbD496F2612
+0x97b052C9A4E8705C067cE0c197833bbD496F2612
+
