@@ -7,8 +7,6 @@ https://stackoverflow.com/questions/2490334/simple-way-to-encode-a-string-accord
 """
 
 
-
-
 import sys, pyperclip, os, csv
 # import encryption and decryption from cipher.py
 
@@ -25,13 +23,17 @@ if 'pw.csv' not in dir_ls:
         fields = ['account', 'password']
         output_writer = csv.DictWriter(output_csv, fieldnames=fields)
         output_writer.writeheader()
+
 else:
     pass
 
-# at this point, pw.csv exists with the right headers, open the file and create writer object from csv module
-f = open('./pw.csv', 'w')
-writer = csv.writer(f)
+# read the csv file, and populate the list of accounts stored in the file currently
+account_ls = []
 
+with open('./pw.csv', 'r') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        account_ls.append(row['account'])
 
 
 
@@ -40,7 +42,8 @@ writer = csv.writer(f)
 def get_password(account, pin):
     pass
 
-def set_password(account, pin, new_pw):
+
+def set_password(account, pin, password):
     pass
 
 
@@ -63,16 +66,20 @@ if len(sys.argv) < 2:
 acct = sys.argv[2]
 pin_num = sys.argv[3]
 if sys.argv[0] == set:
-    password = sys.argv[4]
+    new_pw = sys.argv[4]
 else:
     pass
 
 
 # call the functions based on the sys.argvs
-if sys.argv[1] == "set":
-    print("SETTING")
+if sys.argv[1] == "get":
+    if acct in account_ls:
+        print("account found, retrieving password unlocked by PIN!")
+    else:
+        print("account not found, try setting a new password!")
 
-elif sys.argv[1] == "get":
+
+elif sys.argv[1] == "set":
     print("GETTING")
 
 
@@ -95,5 +102,4 @@ elif sys.argv[1] == "get":
 #     print(f"There is no account called {account} in our database!")
 
 
-f.close()
 
