@@ -1,5 +1,5 @@
 #! python
-# password_keeper.py -
+# password_keeper.py - 1. a password keeper with encryption logic 2. also a practice project
 # developed by thewooniverse
 """
 References:
