@@ -6,7 +6,7 @@ References:
 
 """
 """
-To dos:
+Similar projects:
 * hex address (eth address) detector
 * date detect and parser
 * URL detector
