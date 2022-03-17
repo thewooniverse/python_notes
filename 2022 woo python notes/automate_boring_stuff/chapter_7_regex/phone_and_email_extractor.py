@@ -10,6 +10,9 @@ To dos:
 * hex address (eth address) detector
 * date detect and parser
 * URL detector
+* directory and OS detector
+* regex version of strip()
+* strong password detector
 * typo corrector for double spaces n shit (or even eventually, detecting characters that aren't accurate)
 """
 
@@ -22,6 +25,8 @@ woo@woowoo.net notanemail--gmbam.com (205).105.9985 abunchofgibberish, you can i
 but also, here's the thing - like... 205.202.2005
 here's another, +1(205)-205-2050 and 205-5050 and woo@co.in
 """
+
+
 
 # import modules
 import re, pyperclip
