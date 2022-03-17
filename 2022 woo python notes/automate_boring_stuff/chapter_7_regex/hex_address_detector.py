@@ -4,7 +4,7 @@ hex_address_detector.py - a script by the wooniverse to detect and dump any hex 
 
 
 Similar projects --
-
+private key extractor
 
 
 
