@@ -7,7 +7,7 @@ References:
 """
 """
 Similar projects:
-* hex address (eth address) detector
+* hex address (eth address) detector - done
 * date detect and parser
 * URL detector
 * directory and OS detector

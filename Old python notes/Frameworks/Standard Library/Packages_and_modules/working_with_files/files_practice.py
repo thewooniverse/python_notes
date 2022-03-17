@@ -94,15 +94,15 @@ import csv
 
 # ### writing ###
 
-# # with open('test.txt', 'w') as f:
-#     # f.write('Test')
-#     # f.seek(0)
-#     # by havign f.seek(0) here, we overwrite 'test' in the same location in test.txt
-#     # without it files.txt would be 'TestTest'
-#     # f.write("ABC")
-#     # if test.txt exists it will overwrite it
-#     # if test.txt does not exist it will create it.
-#     # to add to it / append, open with 'a'
+# with open('test.txt', 'w') as f:
+#     f.write('Test')
+#     f.seek(0)
+#     by havign f.seek(0) here, we overwrite 'test' in the same location in test.txt
+#     without it files.txt would be 'TestTest'
+#     f.write("ABC")
+#     if test.txt exists it will overwrite it
+#     if test.txt does not exist it will create it.
+#     to add to it / append, open with 'a'
 
 #     # write only over-writes what is necessary;
 #     # so that if the second f.write is ("ABC") then test.txt will be;

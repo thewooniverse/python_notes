@@ -19,10 +19,11 @@ not this 0xZb315881feda1bc5bc1c229b349338f562affab7 or 0xfbddddd315123881feda1bc
 
 
 # import modules
-import re, pyperclip
+import re, pyperclip, os, csv, datetime, pytz
 
 # pyperclip to paste clipboard to variable
 text = str(pyperclip.paste())
+now = datetime.datetime.now(tz=pytz.UTC)
 
 
 # regex compilation
@@ -34,13 +35,30 @@ hexAddressRegex = re.compile(r"""
 
 
 # search text and find result
-result = []
+result_addresses = []
 for group in hexAddressRegex.findall(text):
     print(group)
-    result.append(group[0] + group[1])
+    result_addresses.append(group[0] + group[1])
 
-print(result)
 
 # dump hex address collected to a separate file (and eventually potentially even send it to myself)
+
+# if file does not exist, create it.
+dir_ls = os.listdir(os.getcwd())
+if 'pw.csv' not in dir_ls:
+    with open('addresses.csv', 'w') as output_csv:
+        fields = ['time', 'address']
+        output_writer = csv.DictWriter(output_csv, fieldnames=fields)
+        output_writer.writeheader()
+
+else:
+    pass
+
+# write to csv
+with open('addresses.csv', 'w') as output_csv:
+    writer = csv.writer(output_csv)
+    for addr in result_addresses:
+        writer.writerow([now, addr])
+
 
 
