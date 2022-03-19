@@ -57,7 +57,7 @@ else:
     pass
 
 # write to csv
-with open('addresses.csv', 'w') as output_csv:
+with open('addresses.csv', 'a') as output_csv:
     writer = csv.writer(output_csv)
     for addr in result_addresses:
         writer.writerow([now, addr])
