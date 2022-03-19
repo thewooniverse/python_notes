@@ -13,6 +13,8 @@ Test cases --
 hello my address is 0xfb315881feda1bc5bc1c229b349338f562affab7 and 0xfb315881feda1bc5bc1c229b349338f562affAB7
 not this 0xZb315881feda1bc5bc1c229b349338f562affab7 or 0xfbddddd315123881feda1bc5123152bc1c229b349338f562affab708124u9182
 
+what if i ran it again, wit ha diff one?
+0xBBBBBBBBB315881feda1bc5bc1c229b349338f562affab7
 """
 
 
