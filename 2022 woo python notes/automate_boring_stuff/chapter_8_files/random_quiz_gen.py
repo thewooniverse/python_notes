@@ -96,10 +96,3 @@ for quiz_num in range(35):
 
 
 
-
-        # create answer
-
-
-
-
-
