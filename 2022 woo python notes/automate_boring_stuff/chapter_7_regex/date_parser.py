@@ -103,8 +103,7 @@ for group in matched_groups:
 
 
 
-print(filtered_dates)
-
+pyperclip.copy('\n'.join(filtered_dates))
 
 
 
@@ -155,4 +154,13 @@ Bogus-05-1995 - NOT REAL
 date/09/20345
 time/09/2105
 JAN
+
+
+RESULT:
+12-12-2022
+06-05-2015
+6-5-2021
+6-5-21
+May-05-1997
+Jun-05-1995
 """
