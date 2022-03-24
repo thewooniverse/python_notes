@@ -30,7 +30,7 @@ copied_clipboard = str(pyperclip.paste())
 commands = ['save', 'get', 'list', 'help']
 
 try:
-    command = sys.argv[1]
+    command = sys.argv[1].lower()
 except IndexError:
     # prints help
     print("""
