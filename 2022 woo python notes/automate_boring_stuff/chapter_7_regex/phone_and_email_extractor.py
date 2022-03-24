@@ -8,15 +8,13 @@ References:
 """
 Similar projects:
 * hex address (eth address) detector - done
-* date detect and parser
-* URL detector
+* date detect and parser - done
+* URL detector - done
 * directory and OS detector
 * regex version of strip()
 * strong password detector
 * typo corrector for double spaces n shit (or even eventually, detecting characters that aren't accurate)
 """
-
-
 
 
 """
@@ -27,11 +25,11 @@ here's another, +1(205)-205-2050 and 205-5050 and woo@co.in
 """
 
 
-
 # import modules
-import re, pyperclip
 
 # pyperclip to paste clipboard to variable
+import re
+import pyperclip
 text = str(pyperclip.paste())
 
 
@@ -45,7 +43,7 @@ phoneRegex = re.compile(r"""(
     (\d{4})             # last 4 digits, not optional
     (\s*(ext|x|ext.)\s*(\d{2,5}))?    # extension, optional
     )""", re.VERBOSE
-     )
+                        )
 
 
 # create regex object for email
@@ -56,7 +54,7 @@ emailRegex = re.compile(r"""(
     (\.[a-zA-Z]{2,4}) # dot something
     )
     """, re.VERBOSE | re.IGNORECASE
-    )
+                        )
 
 ### findall with regex objects ###
 # search for both regex objects saved into variables
@@ -92,5 +90,3 @@ if len(phone_matches + email_matches) > 0:
 
 else:
     print("No phone or email were found in the clipboard")
-
-

@@ -5,11 +5,11 @@ date_parser.py - script to detect dates in clipboards and parse it to a new form
 
 """
 
-import re, pyperclip
+import re
+import pyperclip
 text = str(pyperclip.paste())
 month_lists = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "january", "february", "march", "april", "may", "june",
-"july", "august", "september", "october", "november", "december"]
-
+               "july", "august", "september", "october", "november", "december"]
 
 
 # regex compilation
@@ -72,7 +72,6 @@ for group in matched_groups:
             # too many year like dates
             print(f"{group} is not a valid time format")
 
-
         # if the yearlike date is 1
         elif possible_year_count == 1:
             # too many day like numbers (eg. 2021-15-15)
@@ -83,57 +82,21 @@ for group in matched_groups:
             elif possible_day_count <= 1:
                 filtered_dates.append(''.join(list(group)).strip('-'))
 
-
-
         elif possible_year_count == 0:
 
             # too many date types, e.g. 31-31-31
             if possible_day_count > 2:
                 print(f"{group} is not a valid time format")
 
-
             # 30-12-30
             elif possible_day_count <= 2:
                 filtered_dates.append(''.join(list(group)).strip('-'))
-
-
 
     else:
         print(f'{group} is not a valid time format')
 
 
-
-print(filtered_dates)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+pyperclip.copy('\n'.join(filtered_dates))
 
 
 """
@@ -155,4 +118,13 @@ Bogus-05-1995 - NOT REAL
 date/09/20345
 time/09/2105
 JAN
+
+
+RESULT:
+12-12-2022
+06-05-2015
+6-5-2021
+6-5-21
+May-05-1997
+Jun-05-1995
 """
