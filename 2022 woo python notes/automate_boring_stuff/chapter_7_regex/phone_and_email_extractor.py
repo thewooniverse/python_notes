@@ -11,7 +11,7 @@ Similar projects:
 * date detect and parser - done
 * URL detector - done
 * directory and OS detector
-* regex version of strip()
+* regex version of strip() - done
 * strong password detector
 * typo corrector for double spaces n shit (or even eventually, detecting characters that aren't accurate)
 """

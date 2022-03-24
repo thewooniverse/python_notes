@@ -7,7 +7,10 @@ https://stackoverflow.com/questions/2490334/simple-way-to-encode-a-string-accord
 """
 
 
-import sys, pyperclip, os, csv
+import sys
+import pyperclip
+import os
+import csv
 # import encryption and decryption from cipher.py
 
 
@@ -36,8 +39,6 @@ with open('./pw.csv', 'r') as file:
         account_ls.append(row['account'])
 
 
-
-
 # define functions to get and set password from cipher.py module
 def get_password(account, pin):
     pass
@@ -45,9 +46,6 @@ def get_password(account, pin):
 
 def set_password(account, pin, password):
     pass
-
-
-
 
 
 ### user prompts ###
@@ -65,7 +63,7 @@ if len(sys.argv) < 2:
 # assign args passed by user to variables
 acct = sys.argv[2]
 pin_num = sys.argv[3]
-if sys.argv[0] == set:
+if sys.argv[1] == "set":
     new_pw = sys.argv[4]
 else:
     pass
@@ -83,16 +81,6 @@ elif sys.argv[1] == "set":
     print("GETTING")
 
 
-
-
-
-
-
-
-
-
-
-
 # if account in PASSWORDS:
 #     # in in py dicts will look for the keys anyway;
 #     pyperclip.copy(PASSWORDS[account])
@@ -100,6 +88,3 @@ elif sys.argv[1] == "set":
 
 # else:
 #     print(f"There is no account called {account} in our database!")
-
-
-

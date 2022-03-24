@@ -1,0 +1,5 @@
+
+1. markdown email template generator for CS tickets
+- takes clipboarded username, and fills in everything for the given support ticket type
+
+
