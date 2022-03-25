@@ -20,7 +20,7 @@ def _derive_key(password: bytes, salt: bytes, iterations: int = iterations) -> b
 
 
 def password_encrypt(message: bytes, password: str, iterations: int = iterations) -> bytes:
-    """encrypts message using a key derived from a password""""
+    """encrypts message using a key derived from a password"""
     salt = secrets.token_bytes(16)
     key = _derive_key(password.encode(), salt, iterations)
     return b64e(
@@ -40,10 +40,10 @@ def password_decrypt(token: bytes, password: str) -> bytes:
     return Fernet(key).decrypt(token)
 
 
-message = "Woo Doe"
-password = "mypassword"
-pw_encrypted = password_encrypt(message.encode(), password)
+# message = "Woo Doe"
+# password = "mypassword"
+# pw_encrypted = password_encrypt(message.encode(), password)
 # print(pw_encrypted.decode())
 
-pw_decrypted = password_decrypt(pw_encrypted, password).decode()
+# pw_decrypted = password_decrypt(pw_encrypted, password).decode()
 # print(pw_decrypted)
