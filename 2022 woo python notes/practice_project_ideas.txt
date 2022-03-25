@@ -1,5 +1,11 @@
 
+0. password keeper / protector
+
 1. markdown email template generator for CS tickets
 - takes clipboarded username, and fills in everything for the given support ticket type
 
+2. Regex Search files (both .txt, .md etc... to scrape for stuff)
 
+3. Cards against humanity with Regex and files
+
+4. strong password detector

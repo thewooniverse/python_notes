@@ -33,9 +33,7 @@ for address in matched_URL:
     pass
 
 
-
 pyperclip.copy(valid_URLs)
-
 
 
 """
