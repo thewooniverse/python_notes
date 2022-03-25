@@ -1,0 +1,13 @@
+
+General Productivity / Scripting / Data/ CS:
+- Python + frameworks
+- Shell script / bash / zsh
+- Appscript (which is really JavaScript but for google apps)
+- Type script
+- SQL + PostgreSQL
+
+Front End Development:
+- JavaScript - Node, Angular, React
+- HTML/CSS and extensions
+- PHP
+
