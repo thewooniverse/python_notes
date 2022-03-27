@@ -4,20 +4,6 @@
 """
 References:
 
-"""
-"""
-Similar projects:
-* hex address (eth address) detector - done
-* date detect and parser - done
-* URL detector - done
-* directory and OS detector
-* regex version of strip() - done
-* strong password detector
-* typo corrector for double spaces n shit (or even eventually, detecting characters that aren't accurate)
-"""
-
-
-"""
 sample text:
 woo@woowoo.net notanemail--gmbam.com (205).105.9985 abunchofgibberish, you can ignor this part until this@this.com
 but also, here's the thing - like... 205.202.2005

@@ -1,2 +1,0 @@
-https://python-course.eu/advanced-python/advanced-regular-expressions.php
-https://stackoverflow.com/questions/22438877/using-in-regular-expression
