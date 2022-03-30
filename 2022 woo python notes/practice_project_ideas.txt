@@ -3,8 +3,10 @@
 
 1. markdown email template generator for CS tickets
 - takes clipboarded username, and fills in everything for the given support ticket type
+- probably not necessary at all tbh, MIGHT revisit (at least for signoffs and tidbits? to quick-handedly get some stuff)
 
 2. Regex Search files (both .txt, .md etc... to scrape for stuff)
+
 
 3. Cards against humanity with Regex and files
 

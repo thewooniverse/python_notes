@@ -1,5 +1,9 @@
 NOTE:
-Project scrapped since there is a more handy built-in template tool inside Zendesk itself that supports HTML syntax. And I am not going to write a script that is not actually useful :)
+OK - project unscrapped since this can still be useful for things OTHER than zendesk;
+
+This project can be rescoped for additional file formats, for example it can be used as a helper tool for the discord bot! (to export csv or copy ready format) and for handy things like email signoffs anyway;
+
+- tldr; it can still be used for multiformat stuff.
 
 
 # introduction
