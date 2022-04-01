@@ -9,7 +9,7 @@ import os
 import random
 
 # create random dates
-date_range = (list(range(0, 2030)), list(range(1, 12)), list(range(0, 31)))
+date_range = (list(range(1, 2030)), list(range(1, 12)), list(range(1, 31)))
 cwd = os.getcwd()
 
 # for each, create a file in test_dates
