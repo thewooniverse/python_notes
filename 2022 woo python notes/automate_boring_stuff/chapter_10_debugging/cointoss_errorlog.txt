@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/woo/Desktop/woo_coding_notes/python_notes/2022 woo python notes/automate_boring_stuff/chapter_10_debugging/cointoss_debug.py", line 38, in <module>
+    raise Exception('This is an error message')
+Exception: This is an error message
