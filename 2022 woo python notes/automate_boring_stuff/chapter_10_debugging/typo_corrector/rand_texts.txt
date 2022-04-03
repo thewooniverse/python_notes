@@ -1,0 +1,36 @@
+Pyperclip is a cross-platform Python module for copy and paste clipboard functions. It works with Python 2 and 3.
+Install on Windows: pip install pyperclip
+Install on Linux/macOS: pip3 install pyperclip
+
+Currently only handles plaintext.
+On Windows, no additional modules are needed.
+On Mac, this module makes use of the pbcopy and pbpaste commands, which should come with the os.
+On Linux, this module makes use of the xclip or xsel commands, which should come with the os. Otherwise run “sudo apt-get install xclip” or “sudo apt-get install xsel” (Note: xsel does not always seem to work.)
+Otherwise on Linux, you will need the gtk or PyQt4 modules installed.
+
+This module provides regular expression matching operations similar to those found in Perl.
+Both patterns and strings to be searched can be Unicode strings (str) as well as 8-bit strings (bytes). However, Unicode strings and 8-bit strings cannot be mixed: that is, you cannot match a Unicode string with a byte pattern or vice-versa; similarly, when asking for a substitution, the replacement string must be of the same type as both the pattern and the search string.
+It is important to note that most regular expression operations are available as module-level functions and methods on compiled regular expressions. The functions are shortcuts that don’t require you to compile a regex object first, but miss some fine-tuning parameters.
+
+
+Regular Expression Syntax
+A regular expression (or RE) specifies a set of strings that matches it; the functions in this module let you check if a particular string matches a given regular expression (or if a given regular expression matches a particular string, which comes down to the same thing).
+
+Regular expressions can be concatenated to form new regular expressions; if A and B are both regular expressions, then AB is also a regular expression. In general, if a string p matches A and another string q matches B, the string pq will match AB. This holds unless A or B contain low precedence operations; boundary conditions between A and B; or have numbered group references. Thus, complex expressions can easily be constructed from simpler primitive expressions like the ones described here. For details of the theory and implementation of regular expressions, consult the Friedl book [Frie09], or almost any textbook about compiler construction.
+
+Repetition qualifiers (*, +, ?, {m,n}, etc) cannot be directly nested. This avoids ambiguity with the non-greedy modifier suffix ?, and with other modifiers in other implementations. To apply a second repetition to an inner repetition, parentheses may be used. For example, the expression (?:a{6})* matches any multiple of six 'a' characters.
+
+The special characters are:
+
+Resolution steps
+Dynamic content supports the use of HTML and Markdown however there are limitations when a dynamic content placeholder is used in the trigger message body, as well as agent signatures.
+
+HTML in a dynamic content snippet will render in comments that are not used by a trigger or automation. It will not render if the dynamic content placeholder is inside a macro which is fired in a comment
+
+Markdown and HTML from dynamic content are supported in the ticket comment body but don't render when the dynamic content placeholder is used in the trigger message body and then sent in a Support email notification. The same is true for agent signatures. Instead, use HTML without dynamic content in the trigger body to add formatting to emails, and use Markdown for agent signatures. 
+
+For more information, see the article: Where can I use Markdown and HTML in Zendesk Support?
+
+not if it is used by a trigger or automation
+
+does NOT render if the dynamic content placeholder is placed in a Macro and that macro is fired in a comment
