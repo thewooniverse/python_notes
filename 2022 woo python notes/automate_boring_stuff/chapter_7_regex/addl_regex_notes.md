@@ -26,8 +26,10 @@ https://stackoverflow.com/questions/2990654/how-to-test-a-regex-password-in-pyth
 * URL detector - done
 * regex version of strip() - done
 * strong password detector - done
-* directory and OS detector
+* search directories for usernames or files / emails - done
 * typo corrector for double spaces n shit (or even eventually, detecting characters that aren't accurate)
-* search directories for usernames or files.
+
+
+* directory and OS detector
 * etherscan data dump - parse for xyz.
 
