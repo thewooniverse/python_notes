@@ -3,6 +3,8 @@
 backup2zip.py - a python script that receives a
 usable from anywhere :)
 
+reference notes - 
+https://stackoverflow.com/questions/27991745/zip-file-and-avoid-directory-structure
 """
 import os
 import sys
