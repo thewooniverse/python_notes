@@ -1,0 +1,3 @@
+ 2022-04-07 02:13:10,375 - DEBUG - 
+start of program---!
+ 2022-04-07 02:13:10,375 - DEBUG - backup2zip.py
