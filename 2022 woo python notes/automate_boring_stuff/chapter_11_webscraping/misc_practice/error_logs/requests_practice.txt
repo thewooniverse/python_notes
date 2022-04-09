@@ -1,0 +1,205 @@
+ 2022-04-08 07:56:06,103 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:56:06,585 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-08 07:56:07,308 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-08 07:56:07,312 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-08 07:56:09,796 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-08 07:56:10,602 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-08 07:56:10,602 - DEBUG - <Response [200]>
+ 2022-04-08 07:56:54,485 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:56:54,496 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-08 07:56:55,247 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-08 07:56:55,254 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-08 07:56:57,468 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-08 07:56:57,896 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-08 07:56:57,897 - DEBUG - <Response [200]>
+ 2022-04-08 07:57:34,089 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:57:34,100 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-08 07:57:34,816 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-08 07:57:34,820 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-08 07:57:36,714 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-08 07:57:37,795 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-08 07:57:37,795 - DEBUG - <Response [200]>
+ 2022-04-08 07:57:55,123 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:57:55,131 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-08 07:57:55,866 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-08 07:57:55,870 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-08 07:58:02,707 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-08 07:58:05,787 - DEBUG - 
+///end of program///
+ 2022-04-08 07:59:13,147 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:59:13,156 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-08 07:59:13,879 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-08 07:59:13,885 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-08 07:59:16,938 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-08 07:59:18,021 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-08 07:59:18,021 - DEBUG - True
+ 2022-04-08 07:59:18,022 - DEBUG - 179380
+ 2022-04-08 07:59:18,022 - DEBUG - 
+///end of program///
+ 2022-04-08 07:59:49,007 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:59:49,018 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-08 07:59:49,754 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-08 07:59:49,757 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-08 07:59:53,776 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-08 07:59:56,020 - DEBUG - <Response [200]>
+ 2022-04-08 07:59:56,021 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-08 07:59:56,021 - DEBUG - True
+ 2022-04-08 07:59:56,022 - DEBUG - 179380
+ 2022-04-08 07:59:56,022 - DEBUG - 
+///end of program///
+ 2022-04-08 07:59:59,039 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:59:59,048 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-08 08:00:01,558 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-08 08:00:01,563 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-08 08:00:03,671 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-08 08:00:05,184 - DEBUG - <Response [200]>
+ 2022-04-08 08:00:05,184 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-08 08:00:05,185 - DEBUG - True
+ 2022-04-08 08:00:05,185 - DEBUG - 179380
+ 2022-04-08 08:00:05,185 - DEBUG - ﻿The Project Gutenberg EBook of Romeo and Juliet, by William Shakespeare
+
+
+*******************************************************************
+THIS EBOOK WAS ONE OF PROJECT GUTENBERG'S EARLY FILES PRODUCED AT A
+TIME WHEN PROOFING METHODS AND TOOLS WERE NOT WELL DEVELOPED. THERE
+IS AN IMPROVED EDITION OF THIS TITLE WHICH MAY B
+ 2022-04-08 08:00:05,185 - DEBUG - 
+///end of program///
+ 2022-04-09 03:56:48,808 - DEBUG - 
+---start of program---!
+ 2022-04-09 03:56:49,238 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-09 03:56:49,718 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-09 03:56:49,722 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-09 03:56:51,388 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-09 03:56:56,362 - DEBUG - <Response [200]>
+ 2022-04-09 03:56:56,362 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-09 03:56:56,362 - DEBUG - True
+ 2022-04-09 03:56:56,363 - DEBUG - 179380
+ 2022-04-09 03:56:56,363 - DEBUG - 
+﻿The Project Gutenberg EBook of Romeo and Juliet, by William Shakespeare
+
+
+*******************************************************************
+THIS EBOOK WAS ONE OF PROJECT GUTENBERG'S EARLY FILES PRODUCED AT A
+TIME WHEN PROOFING METHODS AND TOOLS WERE NOT WELL DEVELOPED. THERE
+IS AN IMPROVED EDITION OF THIS TITLE WHICH MAY B
+ 2022-04-09 03:56:56,363 - DEBUG - 
+///end of program///
+ 2022-04-09 03:57:50,493 - DEBUG - 
+---start of program---!
+ 2022-04-09 03:57:50,505 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-09 03:57:51,015 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-09 03:57:51,019 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-09 03:57:53,242 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-09 03:57:54,125 - DEBUG - <Response [200]>
+ 2022-04-09 03:57:54,125 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-09 03:57:54,125 - DEBUG - True
+ 2022-04-09 03:57:54,126 - DEBUG - 179380
+ 2022-04-09 03:57:54,126 - DEBUG - 
+﻿The Project Gutenberg EBook of Romeo and Juliet, by William Shakespeare
+
+
+*******************************************************************
+THIS EBOOK WAS ONE OF PROJECT GUTENBERG'S EARLY FILES PRODUCED AT A
+TIME WHEN PROOFING METHODS AND TOOLS WERE NOT WELL DEVELOPED. THERE
+IS AN IMPROVED EDITION OF THIS TITLE WHICH MAY B
+ 2022-04-09 03:57:54,126 - DEBUG - 
+///end of program///
+ 2022-04-09 03:58:04,893 - DEBUG - 
+---start of program---!
+ 2022-04-09 03:58:04,902 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-09 03:58:07,372 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-09 03:58:07,378 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-09 03:58:08,325 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-09 03:58:09,121 - DEBUG - <Response [200]>
+ 2022-04-09 03:58:09,122 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-09 03:58:09,122 - DEBUG - True
+ 2022-04-09 03:58:09,122 - DEBUG - 179380
+ 2022-04-09 03:58:09,123 - DEBUG - 
+﻿The Project Gutenberg EBook of Romeo and Juliet, by William Shakespeare
+
+
+*******************************************************************
+THIS EBOOK WAS ONE OF PROJECT GUTENBERG'S EARLY FILES PRODUCED AT A
+TIME WHEN PROOFING METHODS AND TOOLS WERE NOT WELL DEVELOPED. THERE
+IS AN IMPROVED EDITION OF THIS TITLE WHICH MAY B
+ 2022-04-09 03:58:09,123 - DEBUG - 
+///end of program///
+ 2022-04-09 03:58:12,351 - DEBUG - Starting new HTTP connection (1): inventwithpython.com:80
+ 2022-04-09 03:58:12,930 - DEBUG - http://inventwithpython.com:80 "GET /page_that_does_not_exist HTTP/1.1" 404 None
+ 2022-04-09 04:00:07,169 - DEBUG - 
+---start of program---!
+ 2022-04-09 04:00:07,181 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-09 04:00:07,646 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-09 04:00:07,650 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-09 04:00:08,621 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-09 04:00:13,091 - DEBUG - <Response [200]>
+ 2022-04-09 04:00:13,092 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-09 04:00:13,092 - DEBUG - True
+ 2022-04-09 04:00:13,093 - DEBUG - 179380
+ 2022-04-09 04:00:13,093 - DEBUG - 
+﻿The Project Gutenberg EBook of Romeo and Juliet, by William Shakespeare
+
+
+*******************************************************************
+THIS EBOOK WAS ONE OF PROJECT GUTENBERG'S EARLY FILES PRODUCED AT A
+TIME WHEN PROOFING METHODS AND TOOLS WERE NOT WELL DEVELOPED. THERE
+IS AN IMPROVED EDITION OF THIS TITLE WHICH MAY B
+ 2022-04-09 04:00:13,093 - DEBUG - 
+///end of program///
+ 2022-04-09 04:00:13,096 - DEBUG - Starting new HTTP connection (1): inventwithpython.com:80
+ 2022-04-09 04:00:14,686 - DEBUG - http://inventwithpython.com:80 "GET /page_that_does_not_exist HTTP/1.1" 404 None
+ 2022-04-09 04:00:14,687 - DEBUG - There was a problem 404 Client Error: Not Found for url: http://inventwithpython.com/page_that_does_not_exist
+ 2022-04-09 04:01:04,858 - DEBUG - 
+---start of program---!
+ 2022-04-09 04:01:04,870 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-09 04:01:05,446 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-09 04:01:05,449 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-09 04:01:06,481 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-09 04:01:06,961 - DEBUG - <Response [200]>
+ 2022-04-09 04:01:06,961 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-09 04:01:06,961 - DEBUG - True
+ 2022-04-09 04:01:06,962 - DEBUG - 179380
+ 2022-04-09 04:01:06,962 - DEBUG - 
+﻿The Project Gutenberg EBook of Romeo and Juliet, by William Shakespeare
+
+
+*******************************************************************
+THIS EBOOK WAS ONE OF PROJECT GUTENBERG'S EARLY FILES PRODUCED AT A
+TIME WHEN PROOFING METHODS AND TOOLS WERE NOT WELL DEVELOPED. THERE
+IS AN IMPROVED EDITION OF THIS TITLE WHICH MAY B
+ 2022-04-09 04:01:06,962 - DEBUG - 
+///end of program///
+ 2022-04-09 04:01:06,964 - DEBUG - Starting new HTTP connection (1): inventwithpython.com:80
+ 2022-04-09 04:01:11,547 - DEBUG - http://inventwithpython.com:80 "GET /page_that_does_not_exist HTTP/1.1" 404 None
+ 2022-04-09 04:01:11,548 - DEBUG - There was a problem 404 Client Error: Not Found for url: http://inventwithpython.com/page_that_does_not_exist
+ 2022-04-09 04:07:30,941 - DEBUG - 
+---start of program---!
+ 2022-04-09 04:07:30,953 - DEBUG - Starting new HTTP connection (1): www.gutenberg.org:80
+ 2022-04-09 04:07:31,452 - DEBUG - http://www.gutenberg.org:80 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 302 0
+ 2022-04-09 04:07:31,459 - DEBUG - Starting new HTTPS connection (1): www.gutenberg.org:443
+ 2022-04-09 04:07:33,027 - DEBUG - https://www.gutenberg.org:443 "GET /cache/epub/1112/pg1112.txt HTTP/1.1" 200 179382
+ 2022-04-09 04:07:33,952 - DEBUG - <Response [200]>
+ 2022-04-09 04:07:33,952 - DEBUG - <class 'requests.models.Response'>
+ 2022-04-09 04:07:33,953 - DEBUG - True
+ 2022-04-09 04:07:33,953 - DEBUG - 179380
+ 2022-04-09 04:07:33,954 - DEBUG - 
+﻿The Project Gutenberg EBook of Romeo and Juliet, by William Shakespeare
+
+
+*******************************************************************
+THIS EBOOK WAS ONE OF PROJECT GUTENBERG'S EARLY FILES PRODUCED AT A
+TIME WHEN PROOFING METHODS AND TOOLS WERE NOT WELL DEVELOPED. THERE
+IS AN IMPROVED EDITION OF THIS TITLE WHICH MAY B
+ 2022-04-09 04:07:33,954 - DEBUG - 
+///end of program///
+ 2022-04-09 04:07:33,957 - DEBUG - Starting new HTTP connection (1): inventwithpython.com:80
+ 2022-04-09 04:07:37,546 - DEBUG - http://inventwithpython.com:80 "GET /page_that_does_not_exist HTTP/1.1" 404 None
+ 2022-04-09 04:07:37,549 - DEBUG - There was a problem 404 Client Error: Not Found for url: http://inventwithpython.com/page_that_does_not_exist

@@ -1,0 +1,18 @@
+ 2022-04-08 07:41:42,017 - DEBUG - 
+start of program---!
+ 2022-04-08 07:47:43,614 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:47:43,655 - DEBUG - Seoul Korea
+ 2022-04-08 07:48:03,543 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:48:03,543 - DEBUG - Seoul Korea Gangnam Gu
+ 2022-04-08 07:48:26,545 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:48:26,545 - DEBUG - motgol maeul
+ 2022-04-08 07:49:49,613 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:49:49,614 - DEBUG - the table bay hotel
+ 2022-04-08 07:54:09,648 - DEBUG - 
+---start of program---!
+ 2022-04-08 07:54:09,648 - DEBUG - ['map_it.py', 'Seoul', 'Korea', 'Gangnam', 'Gu']
+ 2022-04-08 07:54:09,649 - DEBUG - Seoul Korea Gangnam Gu
